@@ -1,3 +1,5 @@
+import { link } from "fs";
+
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
@@ -187,13 +189,17 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
+    link: "https://github.com/Youpfun",  // Remplace ce lien par le tien
   },
   {
     id: 2,
     img: "/twit.svg",
+    link: "https://twitter.com/tonprofil",  // Remplace ce lien par le tien
   },
   {
     id: 3,
     img: "/link.svg",
+    link: "https://linkedin.com/in/tonprofil",  // Remplace ce lien par le tien
   },
 ];
+
