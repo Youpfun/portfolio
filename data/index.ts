@@ -1,16 +1,16 @@
 import { link } from "fs";
 
 export const navItems = [
-  { name: "About", link: "#about" },
-  { name: "Projects", link: "#projects" },
-  { name: "Testimonials", link: "#testimonials" },
-  { name: "Contact", link: "#contact" },
+  { name: "A propos", link: "#about" },
+  { name: "Projets", link: "#projects" },
+  { name: "Témoignage", link: "#testimonials" },
+  { name: "Contacte", link: "#contact" },
 ];
 
 export const gridItems = [
   {
     id: 1,
-    title: "I prioritize client collaboration, fostering open communication ",
+    title: "Je mets l'accent sur la collaboration avec les clients, en encourageant une communication transparente.",
     description: "",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
@@ -20,7 +20,7 @@ export const gridItems = [
   },
   {
     id: 2,
-    title: "I'm very flexible with time zone communications",
+    title: "Je m'adapte aux fuseaux horaires.",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
@@ -30,8 +30,8 @@ export const gridItems = [
   },
   {
     id: 3,
-    title: "My tech stack",
-    description: "I constantly try to improve",
+    title: "Les technologies que j'emploie",
+    description: "J'apprends constamment",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
     titleClassName: "justify-center",
@@ -40,7 +40,7 @@ export const gridItems = [
   },
   {
     id: 4,
-    title: "Tech enthusiast with a passion for development.",
+    title: "Passionné par la technologie et le développement.",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
@@ -51,8 +51,8 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Currently building a JS Animation library",
-    description: "The Inside Scoop",
+    title: "En développement : un hebergeur de site web et de jeux vidéo.",
+    description: "Le Scoop",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
     titleClassName: "justify-center md:justify-start lg:justify-center",
@@ -61,7 +61,7 @@ export const gridItems = [
   },
   {
     id: 6,
-    title: "Do you want to start a project together?",
+    title: "Vous voulez commencer un projet ensemble ?",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
@@ -194,12 +194,12 @@ export const socialMedia = [
   {
     id: 2,
     img: "/twit.svg",
-    link: "https://twitter.com/tonprofil",  // Remplace ce lien par le tien
+    link: "https://x.com/Youpfun",  // Remplace ce lien par le tien
   },
   {
     id: 3,
     img: "/link.svg",
-    link: "https://linkedin.com/in/tonprofil",  // Remplace ce lien par le tien
+    link: "https://www.linkedin.com/in/tristan-gastaldy-8582a3335/",  // Remplace ce lien par le tien
   },
 ];
 
