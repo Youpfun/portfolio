@@ -14,4 +14,7 @@ Route::middleware([
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
+    Route::get('/dashboard/project/edit', function () {
+        return view('project.edit');
+    })->name('project.edit');
 });
