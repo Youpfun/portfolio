@@ -52,8 +52,22 @@
 </section>
 
 <footer class="py-16 text-center text-sm text-white">
-    © 2025 Tristan GASTALDY. Tous droits réservés.
+    <p>© 2025 Tristan GASTALDY. Tous droits réservés.</p>
+    <div class="mt-4 flex justify-center space-x-4">
+        <!-- Bouton LinkedIn -->
+        <a href="https://www.linkedin.com/in/tristan-gastaldy-8582a3335/" target="_blank" class="flex items-center justify-center px-4 py-2 rounded-lg bg-blue-600 hover:bg-blue-700 transition duration-300">
+            <img src="/images/linkedin-logo.png" alt="LinkedIn" class="h-6 w-6">
+        </a>
+
+        <!-- Bouton GitHub -->
+        <a href="https://github.com/YoupFun" target="_blank" class="flex items-center justify-center px-4 py-2 rounded-lg bg-gray-800 hover:bg-gray-700 transition duration-300">
+            <img src="/images/github-logo.png" alt="GitHub" class="h-6 w-6">
+        </a>
+    </div>
 </footer>
+
+
+
 
  <!-- JavaScript pour gérer l'apparition du header  -->
 <script>
