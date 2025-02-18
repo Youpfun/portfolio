@@ -20,10 +20,9 @@
     </div>
 </header>
 
-<section class="h-screen flex flex-col justify-center items-center text-center">
-    <h2 class="text-3xl font-bold text-white">À propos de moi</h2>
-    <p class="mt-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500 text-xl font-semibold italic">Là où l’inspiration rencontre la technique.</p>
-    <p class="mt-2 text-gray-400">Développeur passionné spécialisé en frontend et backend.</p>
+<section id="about" class="h-screen flex flex-col justify-center items-center text-center">
+    <h2 class="mt-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500 text-4xl font-semibold italic">Là où l’inspiration rencontre la technique.</h2>
+    <h3 class="mt-2 text-gray-400">Développeur passionné spécialisé en frontend et backend.</h3>
 </section>
 
 <section id="projects" class="container mx-auto my-12 px-6">
@@ -47,22 +46,32 @@
 <section id="contact" class="container mx-auto my-12 px-6 text-center">
     <h2 class="text-3xl font-bold text-white">Contact</h2>
     <p class="mt-4 text-gray-400">Envoyez-moi un message pour collaborer !</p>
-    <button class="mt-4 px-6 py-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-lg hover:from-purple-600 hover:to-blue-500">Me Contacter</button>
+    <button id="contact-button" class="mt-4 px-6 py-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-lg hover:from-purple-600 hover:to-blue-500">
+        Me Contacter
+    </button>
 </section>
 
 <footer class="py-16 text-center text-sm text-white">
     © 2025 Tristan GASTALDY. Tous droits réservés.
 </footer>
 
-<!-- JavaScript pour gérer l'apparition du header -->
+ <!-- JavaScript pour gérer l'apparition du header  -->
 <script>
     document.addEventListener("scroll", function() {
         const header = document.getElementById("header");
-        if (window.scrollY > 50) { // Affiche le header après 50px de défilement
+        if (window.scrollY > 50) {
             header.classList.remove("-translate-y-full");
         } else {
             header.classList.add("-translate-y-full");
         }
+    });
+
+    // Fonction pour copier l'email
+    document.getElementById("contact-button").addEventListener("click", function() {
+        const email = "tristan.gastaldy@gmail.com";
+        navigator.clipboard.writeText(email).then(function() {
+            alert("Email copié dans le presse-papiers !");
+        });
     });
 </script>
 
