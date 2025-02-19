@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    @vite('resources/css/app.css')
 </head>
 <body class="bg-gray-900 text-gray-100">
 <header id="header" class="fixed top-0 left-0 w-full bg-gray-800 shadow-md py-4 -translate-y-full transition-transform duration-500">
@@ -66,28 +66,6 @@
     </div>
 </footer>
 
-
-
-
- <!-- JavaScript pour gérer l'apparition du header  -->
-<script>
-    document.addEventListener("scroll", function() {
-        const header = document.getElementById("header");
-        if (window.scrollY > 50) {
-            header.classList.remove("-translate-y-full");
-        } else {
-            header.classList.add("-translate-y-full");
-        }
-    });
-
-    // Fonction pour copier l'email
-    document.getElementById("contact-button").addEventListener("click", function() {
-        const email = "tristan.gastaldy@gmail.com";
-        navigator.clipboard.writeText(email).then(function() {
-            alert("Email copié dans le presse-papiers !");
-        });
-    });
-</script>
-
+@vite('resources/js/welcome.js')
 </body>
 </html>
