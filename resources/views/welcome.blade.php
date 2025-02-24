@@ -14,9 +14,9 @@
         <h1 class="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text">Portfolio de Tristan</h1>
         <nav>
             <ul class="flex space-x-6">
-                <li><a href="#about" class="hover:text-blue-400 text-white">À propos</a></li>
-                <li><a href="#projects" class="hover:text-blue-400 text-white">Projets</a></li>
-                <li><a href="#contact" class="hover:text-blue-400 text-white">Contact</a></li>
+                <li><a href="#about" class="hover:text-purple-400 text-white">À propos</a></li>
+                <li><a href="#projects" class="hover:text-purple-400 text-white">Projets</a></li>
+                <li><a href="#contact" class="hover:text-purple-400 text-white">Contact</a></li>
             </ul>
         </nav>
     </div>
@@ -27,19 +27,19 @@
     <h3 class="mt-2 text-gray-400">Développeur passionné spécialisé en frontend et backend.</h3>
 </section>
 
-<section id="projects" class="container mx-auto my-12 px-6">
+<section id="projects" class="container mx-auto my-12 px-6 pt-8">
 <h2 class="text-3xl font-bold text-center text-white p-9">Mes Projets</h2>
 <div class="embla">
       <div class="embla__viewport">
         <div class="embla__container">
          <div class="embla__slide">
            <div class="embla__slide__number bg-cover bg-center bg-no-repeat" style="background-image: url('{{ asset('images/mock-up.jpg') }}');">
-                <h3 class="mt-2 text-gray-400">Description du projet.</h3>
+                <h3 class="mt-2 text-white text-5xl text-center drop-shadow-[2px_2px_2px_black]">Description du projet</h3>
            </div>
          </div>
           <div class="embla__slide">
             <div class="embla__slide__number">
-            <h3 class="mt-2 text-gray-400">Description du projet.</h3>
+            <h3 class="mt-2 text-gray-400 ">Description du projet.</h3>
           </div>
           </div>
           <div class="embla__slide">
