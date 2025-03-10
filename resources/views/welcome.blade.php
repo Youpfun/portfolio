@@ -22,9 +22,17 @@
     </div>
 </header>
 
-<section id="about" class="h-screen flex flex-col justify-center items-center text-center">
-    <h2 class="mt-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500 text-4xl font-semibold italic">Là où l’inspiration rencontre la technique.</h2>
-    <h3 class="mt-2 text-gray-400">Développeur passionné spécialisé en frontend et backend.</h3>
+<section id="about" class="h-screen flex flex-col justify-center items-center text-center px-4">
+    <div aria-hidden="true" class="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-20 -z-50">
+        <div class="blur-[106px] h-56 bg-gradient-to-br from-blue-400 to-purple-500"></div>
+        <div class="blur-[106px] h-32 bg-gradient-to-r from-blue-400 to-purple-500"></div>
+    </div>
+    <div class="mb-6">
+        <h2 class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold py-2">
+            Salut, je suis Tristan Gastaldy
+        </h2>
+    </div>
+    <h3 class="mt-2 text-gray-400 text-base md:text-lg lg:text-xl">Là où l'inspiration rencontre la technique.</h3>
 </section>
 
 <section id="projects" class="container mx-auto my-12 px-6 pt-8">
