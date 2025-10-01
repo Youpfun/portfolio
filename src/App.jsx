@@ -3,13 +3,6 @@ import './App.css'
 
 function App() {
   const [activeSection, setActiveSection] = useState('about')
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  })
-  const [isSubmitting, setIsSubmitting] = useState(false)
-  const [submitStatus, setSubmitStatus] = useState('')
 
   useEffect(() => {
     const handleScroll = () => {
@@ -33,52 +26,6 @@ function App() {
     const element = document.getElementById(sectionId)
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' })
-    }
-  }
-
-  const handleInputChange = (e) => {
-    const { name, value } = e.target
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }))
-  }
-
-  const handleSubmit = async (e) => {
-    e.preventDefault()
-    setIsSubmitting(true)
-    setSubmitStatus('')
-
-    try {
-      // Utilisation d'un service de formulaire simple et fiable
-      const formElement = e.target
-      const formData_submit = new FormData()
-      
-      formData_submit.append('name', formData.name)
-      formData_submit.append('email', formData.email)
-      formData_submit.append('message', formData.message)
-      formData_submit.append('_to', 'tristan.gastaldy@gmail.com')
-      formData_submit.append('_subject', `Nouveau message de ${formData.name} - Portfolio`)
-      formData_submit.append('_after', window.location.href)
-
-      // Utilisation de Formsubmit.co - service gratuit et immédiat
-      const response = await fetch('https://formsubmit.co/tristan.gastaldy@gmail.com', {
-        method: 'POST',
-        body: formData_submit
-      })
-
-      if (response.ok || response.redirected) {
-        setSubmitStatus('success')
-        setFormData({ name: '', email: '', message: '' })
-      } else {
-        throw new Error('Erreur lors de l\'envoi')
-      }
-      
-    } catch (error) {
-      console.error('Erreur lors de l\'envoi:', error)
-      setSubmitStatus('error')
-    } finally {
-      setIsSubmitting(false)
     }
   }
 
@@ -264,8 +211,6 @@ function App() {
                     type="text" 
                     id="name" 
                     name="name" 
-                    value={formData.name}
-                    onChange={handleInputChange}
                     required 
                   />
                 </div>
@@ -275,8 +220,6 @@ function App() {
                     type="email" 
                     id="email" 
                     name="email" 
-                    value={formData.email}
-                    onChange={handleInputChange}
                     required 
                   />
                 </div>
@@ -286,33 +229,15 @@ function App() {
                     id="message" 
                     name="message" 
                     rows="5" 
-                    value={formData.message}
-                    onChange={handleInputChange}
                     required
                   ></textarea>
                 </div>
                 
-                {submitStatus === 'success' && (
-                  <div className="form-status success">
-                    ✅ Message envoyé avec succès ! Je vous répondrai bientôt.
-                  </div>
-                )}
+                <input type="hidden" name="_subject" value="Nouveau message - Portfolio" />
+                <input type="hidden" name="_next" value="https://tristan-gastaldy.dev/thank-you" />
                 
-                {submitStatus === 'error' && (
-                  <div className="form-status error">
-                    ❌ Erreur lors de l'envoi. Veuillez réessayer ou me contacter directement.
-                  </div>
-                )}
-                
-                <input type="hidden" name="_subject" value={`Nouveau message de ${formData.name} - Portfolio`} />
-                <input type="hidden" name="_after" value={window.location.href} />
-                
-                <button 
-                  type="submit" 
-                  className="btn-primary"
-                  disabled={isSubmitting}
-                >
-                  {isSubmitting ? 'Envoi en cours...' : 'Envoyer le message'}
+                <button type="submit" className="btn-primary">
+                  Envoyer le message
                 </button>
               </form>
             </div>
