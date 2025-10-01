@@ -253,7 +253,11 @@ function App() {
               </div>
             </div>
             <div className="contact-form">
-              <form onSubmit={handleSubmit}>
+              <form 
+                action="https://formsubmit.co/tristan.gastaldy@gmail.com" 
+                method="POST"
+                target="_blank"
+              >
                 <div className="form-group">
                   <label htmlFor="name">Nom</label>
                   <input 
@@ -299,6 +303,9 @@ function App() {
                     ❌ Erreur lors de l'envoi. Veuillez réessayer ou me contacter directement.
                   </div>
                 )}
+                
+                <input type="hidden" name="_subject" value={`Nouveau message de ${formData.name} - Portfolio`} />
+                <input type="hidden" name="_after" value={window.location.href} />
                 
                 <button 
                   type="submit" 
