@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Tristan Gastaldy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo">Tristan Gastaldy</a>
+            <div class="nav-right">
+                <button class="menu-toggle" id="menuToggle">☰</button>
+                <ul id="navMenu">
+                    <li><a href="index.html#about" class="nav-link-text">À propos</a></li>
+                    <li><a href="index.html#projects" class="nav-link-text">Projets</a></li>
+                    <li><a href="cv.html" class="nav-link-text">CV</a></li>
+                    <li><a href="index.html#contact" class="nav-link-text">Contact</a></li>
+                </ul>
+                <button class="lang-toggle" id="langToggle" onclick="toggleLanguage()">FR</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CV Section -->
+    <section id="cv-page">
+        <h2 class="section-title">Mon CV</h2>
+        <div class="cv-content">
+            <div class="cv-actions-top">
+                <button onclick="downloadCV()" class="cv-button">
+                    ⬇ <span id="downloadText">Télécharger le CV</span>
+                </button>
+                <button class="cv-button secondary" onclick="openInNewTab()">
+                    🔗 <span id="openText">Ouvrir dans un nouvel onglet</span>
+                </button>
+            </div>
+
+            <!-- Viewer PDF intégré -->
+            <div class="cv-viewer">
+                <iframe id="cvFrame" src="./cv-tristan-gastaldy-fr.pdf" frameborder="0"></iframe>
+            </div>
+
+            <div class="cv-details">
+                <div class="cv-detail-card">
+                    <h4 id="formationTitle">Formation</h4>
+                    <ul id="formationList">
+                        <li>BUT Informatique (en cours)</li>
+                        <li>IUT de Annecy</li>
+                        <li>2ème année</li>
+                    </ul>
+                </div>
+                <div class="cv-detail-card">
+                    <h4 id="skillsTitle">Compétences techniques</h4>
+                    <ul id="skillsList">
+                        <li>Développement web</li>
+                        <li>Programmation orientée objet</li>
+                        <li>Bases de données</li>
+                        <li>Design graphique</li>
+                    </ul>
+                </div>
+                <div class="cv-detail-card">
+                    <h4 id="languagesTitle">Langues</h4>
+                    <ul id="languagesList">
+                        <li>Français (langue maternelle)</li>
+                        <li>Anglais (bon niveau)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Tristan Gastaldy. Tous droits réservés.</p>
+    </footer>
+
+    <script src="cv.js"></script>
+</body>
+</html>
