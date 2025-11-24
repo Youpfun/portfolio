@@ -26,7 +26,7 @@ var translations = {
         ],
         languages: [
             'Français (langue maternelle)',
-            'Anglais (bon niveau)'
+            'Anglais (niveau intermédiaire)'
         ]
     },
     en: {
@@ -53,7 +53,7 @@ var translations = {
         ],
         languages: [
             'French (native)',
-            'English (good level)'
+            'English (intermediate level)'
         ]
     }
 };
