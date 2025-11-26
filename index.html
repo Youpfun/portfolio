@@ -15,6 +15,8 @@
                 <button class="menu-toggle" id="menuToggle">☰</button>
                 <ul id="navMenu">
                     <li><a href="#about" class="nav-link-text">À propos</a></li>
+                    <li><a href="#skills" class="nav-link-text">Compétences</a></li>
+                    <li><a href="#experiences" class="nav-link-text">Expériences</a></li>
                     <li><a href="#projects" class="nav-link-text">Projets</a></li>
                     <li><a href="cv.html" class="nav-link-text">CV</a></li>
                     <li><a href="#contact" class="nav-link-text">Contact</a></li>
@@ -26,11 +28,16 @@
 
     <!-- Hero Section -->
     <section id="hero">
-        <div class="hero-content">
-            <h1>Tristan Gastaldy</h1>
-            <h2>Étudiant en BUT2 Informatique</h2>
-            <p>Passionné par le développement web et la création d'expériences numériques, je recherche activement des opportunités pour mettre en pratique mes compétences.</p>
-            <a href="#projects" class="cta-button">Voir mes projets</a>
+        <div class="hero-container">
+            <div class="hero-image">
+                <img src="images/profile.jpg" alt="Tristan Gastaldy">
+            </div>
+            <div class="hero-content">
+                <h1>Tristan Gastaldy</h1>
+                <h2>Étudiant en BUT2 Informatique</h2>
+                <p>Passionné par le développement web et la création d'expériences numériques, je recherche activement des opportunités pour mettre en pratique mes compétences.</p>
+                <a href="#projects" class="cta-button">Voir mes projets</a>
+            </div>
         </div>
     </section>
 
@@ -46,15 +53,149 @@
                     J'ai une approche pragmatique du développement, en privilégiant des solutions efficaces et maintenables. Je suis particulièrement intéressé par les technologies modernes et les bonnes pratiques de développement.
                 </p>
             </div>
-            <div class="skills fade-in">
-                <ul class="skills-list">
-                    <li>HTML / CSS</li>
-                    <li>JavaScript</li>
-                    <li>Python</li>
-                    <li>Java</li>
-                    <li>Git / GitHub</li>
-                    <li>SQL / Bases de données</li>
-                </ul>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2 class="section-title">Compétences Techniques</h2>
+        <div class="skills-container fade-in">
+            <div class="skill-category">
+                <h3>Développement Web</h3>
+                <div class="tech-icons">
+                    <div class="tech-item">
+                        <div class="tech-icon html-icon">HTML</div>
+                        <p>HTML / CSS</p>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon js-icon">JS</div>
+                        <p>JavaScript</p>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon responsive-icon">⚡</div>
+                        <p>Responsive Design</p>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Programmation</h3>
+                <div class="tech-icons">
+                    <div class="tech-item">
+                        <div class="tech-icon csharp-icon">C#</div>
+                        <p>C#</p>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon java-icon">Java</div>
+                        <p>Java</p>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon python-icon">Py</div>
+                        <p>Python</p>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Outils & Technologies</h3>
+                <div class="tech-icons">
+                    <div class="tech-item">
+                        <div class="tech-icon sql-icon">SQL</div>
+                        <p>SQL / Bases de données</p>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon git-icon">Git</div>
+                        <p>Git / GitHub</p>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon wpf-icon">WPF</div>
+                        <p>WPF / UI Design</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experiences Section -->
+    <section id="experiences">
+        <h2 class="section-title">Expériences Professionnelles</h2>
+        <div class="experiences-container fade-in">
+            <div class="experience-card">
+                <div class="experience-header">
+                    <h3 data-fr="Étudiant en BUT Informatique" data-en="Computer Science Student">Étudiant en BUT Informatique</h3>
+                    <span class="experience-date" data-fr="2023 - Présent" data-en="2023 - Present">2023 - Présent</span>
+                </div>
+                <p class="experience-company" data-fr="IUT d'Annecy" data-en="IUT of Annecy">IUT d'Annecy</p>
+                <p class="experience-description" data-fr="Formation approfondie en informatique avec spécialisation en développement logiciel. Projets universitaires incluant développement d'applications C# WPF, gestion de bases de données, et développement de jeux 2D." data-en="In-depth computer science training with specialization in software development. University projects including C# WPF application development, database management, and 2D game development.">
+                    Formation approfondie en informatique avec spécialisation en développement logiciel. Projets universitaires incluant développement d'applications C# WPF, gestion de bases de données, et développement de jeux 2D.
+                </p>
+                <div class="experience-tags">
+                    <span class="tag">C#</span>
+                    <span class="tag">Java</span>
+                    <span class="tag">SQL</span>
+                    <span class="tag" data-fr="Gestion de projet" data-en="Project management">Gestion de projet</span>
+                </div>
+            </div>
+            
+            <div class="experience-card">
+                <div class="experience-header">
+                    <h3 data-fr="Développeur Web Freelance" data-en="Freelance Web Developer">Développeur Web Freelance</h3>
+                    <span class="experience-date" data-fr="2024 - Présent" data-en="2024 - Present">2024 - Présent</span>
+                </div>
+                <p class="experience-company" data-fr="Indépendant" data-en="Self-employed">Indépendant</p>
+                <p class="experience-description" data-fr="Développement de sites web pour des clients professionnels incluant Fire-Hosting.net (plateforme d'hébergement de jeux), Aixnride.com (sports nautiques), et Ostéopathe-Chambéry.com. Gestion complète des projets de la conception au déploiement." data-en="Web development for professional clients including Fire-Hosting.net (gaming hosting platform), Aixnride.com (water sports), and Ostéopathe-Chambéry.com. Complete project management from design to deployment.">
+                    Développement de sites web pour des clients professionnels incluant Fire-Hosting.net (plateforme d'hébergement de jeux), Aixnride.com (sports nautiques), et Ostéopathe-Chambéry.com. Gestion complète des projets de la conception au déploiement.
+                </p>
+                <div class="experience-tags">
+                    <span class="tag">HTML/CSS</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">Responsive Design</span>
+                </div>
+            </div>
+            
+            <div class="experience-card">
+                <div class="experience-header">
+                    <h3 data-fr="Intérimaire Polyvalent" data-en="Temporary Worker">Intérimaire Polyvalent</h3>
+                    <span class="experience-date" data-fr="2025 - Présent" data-en="2025 - Present">2025 - Présent</span>
+                </div>
+                <p class="experience-company" data-fr="Diverses entreprises" data-en="Various companies">Diverses entreprises</p>
+                <p class="experience-description" data-fr="Missions intérimaires variées : déblaiement de chantier, tri de colis chez Mondial Relay, et inventaire. Adaptabilité et polyvalence dans différents environnements professionnels." data-en="Various temporary assignments: construction site clearing, parcel sorting at Mondial Relay, and inventory management. Adaptability and versatility in different professional environments.">
+                    Missions intérimaires variées : déblaiement de chantier, tri de colis chez Mondial Relay, et inventaire. Adaptabilité et polyvalence dans différents environnements professionnels.
+                </p>
+                <div class="experience-tags">
+                    <span class="tag" data-fr="Logistique" data-en="Logistics">Logistique</span>
+                    <span class="tag" data-fr="Polyvalence" data-en="Versatility">Polyvalence</span>
+                    <span class="tag" data-fr="Travail d'équipe" data-en="Teamwork">Travail d'équipe</span>
+                </div>
+            </div>
+            
+            <div class="experience-card">
+                <div class="experience-header">
+                    <h3 data-fr="Éboueur" data-en="Waste Collector">Éboueur</h3>
+                    <span class="experience-date" data-fr="Août 2025" data-en="August 2025">Août 2025</span>
+                </div>
+                <p class="experience-company" data-fr="Service municipal" data-en="Municipal service">Service municipal</p>
+                <p class="experience-description" data-fr="Collecte et gestion des déchets urbains. Travail en équipe avec respect des consignes de sécurité et des horaires matinaux. Développement de la résistance physique et de la ponctualité." data-en="Urban waste collection and management. Teamwork with safety procedures compliance and early morning schedules. Development of physical endurance and punctuality.">
+                    Collecte et gestion des déchets urbains. Travail en équipe avec respect des consignes de sécurité et des horaires matinaux. Développement de la résistance physique et de la ponctualité.
+                </p>
+                <div class="experience-tags">
+                    <span class="tag" data-fr="Service public" data-en="Public service">Service public</span>
+                    <span class="tag" data-fr="Rigueur" data-en="Rigor">Rigueur</span>
+                </div>
+            </div>
+            
+            <div class="experience-card">
+                <div class="experience-header">
+                    <h3 data-fr="Assistant en Pharmacie" data-en="Pharmacy Assistant">Assistant en Pharmacie</h3>
+                    <span class="experience-date" data-fr="Vacances de la Toussaint 2025" data-en="All Saints' Holiday 2025">Vacances de la Toussaint 2025</span>
+                </div>
+                <p class="experience-company">Pharmacie</p>
+                <p class="experience-description" data-fr="Réception et rangement des commandes pharmaceutiques. Organisation du stock, vérification des livraisons et assistance aux pharmaciens. Rigueur et précision dans un environnement médical." data-en="Reception and storage of pharmaceutical orders. Stock organization, delivery verification and pharmacist assistance. Rigor and precision in a medical environment.">
+                    Réception et rangement des commandes pharmaceutiques. Organisation du stock, vérification des livraisons et assistance aux pharmaciens. Rigueur et précision dans un environnement médical.
+                </p>
+                <div class="experience-tags">
+                    <span class="tag" data-fr="Santé" data-en="Healthcare">Santé</span>
+                    <span class="tag" data-fr="Organisation" data-en="Organization">Organisation</span>
+                    <span class="tag" data-fr="Rigueur" data-en="Rigor">Rigueur</span>
+                </div>
             </div>
         </div>
     </section>
@@ -74,64 +215,152 @@
         </div>
 
         <div class="projects-grid" id="projectsGrid">
-            <div class="project-card fade-in" data-tags="cv pdf html css design">
-                <h3>CV Corrigé et Optimisé</h3>
-                <p>Correction et mise en forme professionnelle d'un CV. Amélioration de la présentation visuelle et structuration du contenu pour une meilleure lisibilité.</p>
-                <div class="project-tags">
-                    <span class="tag">PDF</span>
-                    <span class="tag">Design</span>
-                    <span class="tag">Mise en page</span>
+            <!-- Portfolio itself as a project -->
+            <div class="project-card fade-in" data-tags="portfolio web html css javascript responsive">
+                <div class="project-header">
+                    <h3 data-fr="Portfolio Personnel" data-en="Personal Portfolio">Portfolio Personnel</h3>
+                    <span class="project-date" data-fr="Novembre 2025" data-en="November 2025">Novembre 2025</span>
                 </div>
-            </div>
-            <div class="project-card fade-in" data-tags="html css ergonomie">
-                <h3>Ergonomie Site Web</h3>
-                <p>Analyse et amélioration de l'ergonomie d'un site web. Optimisation de l'expérience utilisateur et de l'accessibilité.</p>
+                <p class="project-context" data-fr="Projet personnel - Développement Web" data-en="Personal Project - Web Development">Projet personnel - Développement Web</p>
+                <p data-fr="Conception et développement de mon portfolio en ligne from scratch. Site responsive présentant mes projets et compétences avec système de traduction FR/EN, formulaire de contact fonctionnel, et animations fluides. Utilisation de JavaScript vanilla pour les interactions et CSS moderne pour le design." data-en="Design and development of my online portfolio from scratch. Responsive website showcasing my projects and skills with FR/EN translation system, functional contact form, and smooth animations. Using vanilla JavaScript for interactions and modern CSS for design.">Conception et développement de mon portfolio en ligne from scratch. Site responsive présentant mes projets et compétences avec système de traduction FR/EN, formulaire de contact fonctionnel, et animations fluides. Utilisation de JavaScript vanilla pour les interactions et CSS moderne pour le design.</p>
                 <div class="project-tags">
-                    <span class="tag">HTML</span>
-                    <span class="tag">CSS</span>
-                    <span class="tag">UX/UI</span>
-                </div>
-            </div>
-            <div class="project-card fade-in" data-tags="graphique design photoshop">
-                <h3>Graphic Design</h3>
-                <p>Création de visuels et d'éléments graphiques. Utilisation d'outils de design pour produire des contenus visuels attractifs.</p>
-                <div class="project-tags">
-                    <span class="tag">Design</span>
-                    <span class="tag">Graphisme</span>
-                    <span class="tag">Créativité</span>
-                </div>
-            </div>
-            <div class="project-card fade-in" data-tags="portfolio web html css javascript">
-                <h3>Portfolio Personnel</h3>
-                <p>Conception et développement de mon portfolio en ligne. Site responsive présentant mes projets et compétences.</p>
-                <div class="project-tags">
-                    <span class="tag">HTML</span>
-                    <span class="tag">CSS</span>
+                    <span class="tag">HTML/CSS</span>
                     <span class="tag">JavaScript</span>
+                    <span class="tag">Responsive</span>
+                    <span class="tag" data-fr="Design" data-en="Design">Design</span>
                 </div>
             </div>
-            <div class="project-card fade-in" data-tags="python communes scraping">
-                <h3>Projet Communes et Distinctes</h3>
-                <p>Application permettant d'analyser et de comparer des données de communes. Traitement de données et visualisation.</p>
+
+            <div class="project-card fade-in" data-tags="hosting hébergement jeux gaming serveur web">
+                <div class="project-header">
+                    <h3 data-fr="Fire-Hosting.net" data-en="Fire-Hosting.net">Fire-Hosting.net</h3>
+                    <span class="project-date">2024</span>
+                </div>
+                <p class="project-context" data-fr="Projet client - Développement Web" data-en="Client Project - Web Development">Projet client - Développement Web</p>
+                <p data-fr="Plateforme d'hébergement de serveurs de jeux vidéo. Développement d'un site vitrine professionnel avec présentation des offres d'hébergement, système de tarification, et interface d'administration. Infrastructure optimisée pour le gaming avec HTML, CSS et JavaScript." data-en="Video game server hosting platform. Development of a professional showcase website with hosting plans presentation, pricing system, and administration interface. Gaming-optimized infrastructure using HTML, CSS and JavaScript.">Plateforme d'hébergement de serveurs de jeux vidéo. Développement d'un site vitrine professionnel avec présentation des offres d'hébergement, système de tarification, et interface d'administration. Infrastructure optimisée pour le gaming avec HTML, CSS et JavaScript.</p>
+                
+                <!-- Bouton pour afficher les photos -->
+                <button class="view-photos-btn" onclick="openGallery('firehosting')" data-fr="📸 Voir les photos" data-en="📸 View photos">📸 Voir les photos</button>
+                
+                <!-- Galerie d'images du projet (cachée) -->
+                <div class="project-gallery" id="gallery-firehosting" style="display: none;">
+                    <img src="images/fire-hosting/mock-up.jpg" alt="Mock-up Fire-Hosting" class="project-screenshot" data-gallery="firehosting">
+                </div>
+                
                 <div class="project-tags">
-                    <span class="tag">Python</span>
-                    <span class="tag">Data</span>
-                    <span class="tag">Analyse</span>
+                    <span class="tag">HTML/CSS</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">Gaming</span>
+                    <span class="tag" data-fr="Hébergement" data-en="Hosting">Hébergement</span>
+                </div>
+                <a href="https://fire-hosting.net" target="_blank" class="project-link" data-fr="Voir le site →" data-en="View site →">Voir le site →</a>
+            </div>
+
+            <div class="project-card fade-in" data-tags="wakeboard wakesurf sport nautique entreprise web">
+                <div class="project-header">
+                    <h3 data-fr="Aixnride.com" data-en="Aixnride.com">Aixnride.com</h3>
+                    <span class="project-date">2024</span>
+                </div>
+                <p class="project-context" data-fr="Projet client - Développement Web & Design" data-en="Client Project - Web Development & Design">Projet client - Développement Web & Design</p>
+                <p data-fr="Site web pour une entreprise de sports nautiques. Création complète du site vitrine avec présentation des activités de wakeboard et wakesurf, système de réservation, galerie photos, et informations pratiques. Design moderne et responsive adapté à l'identité de la marque." data-en="Website for a water sports company. Complete creation of showcase site with wakeboard and wakesurf activities presentation, booking system, photo gallery, and practical information. Modern and responsive design adapted to brand identity.">Site web pour une entreprise de sports nautiques. Création complète du site vitrine avec présentation des activités de wakeboard et wakesurf, système de réservation, galerie photos, et informations pratiques. Design moderne et responsive adapté à l'identité de la marque.</p>
+                
+                <!-- Bouton pour afficher les photos -->
+                <button class="view-photos-btn" onclick="openGallery('aixnride')" data-fr="📸 Voir les photos" data-en="📸 View photos">📸 Voir les photos</button>
+                
+                <!-- Galerie d'images du projet (cachée) -->
+                <div class="project-gallery" id="gallery-aixnride" style="display: none;">
+                    <img src="images/aixnride/Capture d'écran 2025-11-26 094516.png" alt="Page d'accueil Aixnride" class="project-screenshot" data-gallery="aixnride">
+                    <img src="images/aixnride/Capture d'écran 2025-11-26 094549.png" alt="Section activités Aixnride" class="project-screenshot" data-gallery="aixnride">
+                    <img src="images/aixnride/Capture d'écran 2025-11-26 094605.png" alt="Galerie photos Aixnride" class="project-screenshot" data-gallery="aixnride">
+                    <img src="images/aixnride/Capture d'écran 2025-11-26 094609.png" alt="Section réservation Aixnride" class="project-screenshot" data-gallery="aixnride">
+                    <img src="images/aixnride/Capture d'écran 2025-11-26 094614.png" alt="Contact Aixnride" class="project-screenshot" data-gallery="aixnride">
+                </div>
+                
+                <div class="project-tags">
+                    <span class="tag">HTML/CSS</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">Wakeboard</span>
+                    <span class="tag" data-fr="Design" data-en="Design">Design</span>
+                </div>
+                <a href="https://aixnride.com" target="_blank" class="project-link" data-fr="Voir le site →" data-en="View site →">Voir le site →</a>
+            </div>
+
+            <div class="project-card fade-in" data-tags="ostéopathe santé chambéry site web médical professionnel">
+                <div class="project-header">
+                    <h3 data-fr="Ostéopathe Chambéry" data-en="Osteopath Chambéry">Ostéopathe Chambéry</h3>
+                    <span class="project-date">2024</span>
+                </div>
+                <p class="project-context" data-fr="Projet client - Développement Web Médical" data-en="Client Project - Medical Web Development">Projet client - Développement Web Médical</p>
+                <p data-fr="Site web professionnel pour un cabinet d'ostéopathie à Chambéry. Développement d'un site vitrine avec présentation des services d'ostéopathie, système de prise de rendez-vous en ligne, présentation des tarifs, et informations de contact. Interface épurée et professionnelle adaptée au secteur médical." data-en="Professional website for an osteopathy clinic in Chambéry. Development of a showcase site with osteopathy services presentation, online appointment booking system, pricing display, and contact information. Clean and professional interface adapted to the medical sector.">Site web professionnel pour un cabinet d'ostéopathie à Chambéry. Développement d'un site vitrine avec présentation des services d'ostéopathie, système de prise de rendez-vous en ligne, présentation des tarifs, et informations de contact. Interface épurée et professionnelle adaptée au secteur médical.</p>
+                
+                <!-- Bouton pour afficher les photos -->
+                <button class="view-photos-btn" onclick="openGallery('osteopathe')" data-fr="📸 Voir les photos" data-en="📸 View photos">📸 Voir les photos</button>
+                
+                <!-- Galerie d'images du projet (cachée) -->
+                <div class="project-gallery" id="gallery-osteopathe" style="display: none;">
+                    <img src="images/osteopathe-chambery/Capture d'écran 2025-11-26 094250.png" alt="Page d'accueil Ostéopathe Chambéry" class="project-screenshot" data-gallery="osteopathe">
+                    <img src="images/osteopathe-chambery/Capture d'écran 2025-11-26 094359.png" alt="Services ostéopathie" class="project-screenshot" data-gallery="osteopathe">
+                    <img src="images/osteopathe-chambery/Capture d'écran 2025-11-26 094409.png" alt="Prise de rendez-vous" class="project-screenshot" data-gallery="osteopathe">
+                </div>
+                
+                <div class="project-tags">
+                    <span class="tag">HTML/CSS</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag" data-fr="Santé" data-en="Health">Santé</span>
+                    <span class="tag" data-fr="Professionnel" data-en="Professional">Professionnel</span>
+                </div>
+                <a href="https://osteopathe-chambery.com" target="_blank" class="project-link" data-fr="Voir le site →" data-en="View site →">Voir le site →</a>
+            </div>
+
+            <div class="project-card fade-in" data-tags="c# csharp wpf jeu 2d game développement universitaire poo">
+                <div class="project-header">
+                    <h3 data-fr="Jeu 2D en C# WPF" data-en="2D Game in C# WPF">Jeu 2D en C# WPF</h3>
+                    <span class="project-date">2024</span>
+                </div>
+                <p class="project-context" data-fr="Projet Universitaire BUT2 - Développement Logiciel" data-en="University Project BUT2 - Software Development">Projet Universitaire BUT2 - Développement Logiciel</p>
+                <p data-fr="Développement d'un jeu vidéo en 2D complet réalisé en C# avec Windows Presentation Foundation (WPF). Mise en œuvre des concepts avancés de programmation orientée objet (héritage, polymorphisme, encapsulation), gestion des événements clavier/souris, système de collision, et interface graphique animée. Architecture MVC pour une séparation claire du code." data-en="Development of a complete 2D video game created in C# with Windows Presentation Foundation (WPF). Implementation of advanced object-oriented programming concepts (inheritance, polymorphism, encapsulation), keyboard/mouse event handling, collision system, and animated graphical interface. MVC architecture for clear code separation.">Développement d'un jeu vidéo en 2D complet réalisé en C# avec Windows Presentation Foundation (WPF). Mise en œuvre des concepts avancés de programmation orientée objet (héritage, polymorphisme, encapsulation), gestion des événements clavier/souris, système de collision, et interface graphique animée. Architecture MVC pour une séparation claire du code.</p>
+                <div class="project-tags">
+                    <span class="tag">C#</span>
+                    <span class="tag">WPF</span>
+                    <span class="tag" data-fr="POO" data-en="OOP">POO</span>
+                    <span class="tag" data-fr="Jeu 2D" data-en="2D Game">Jeu 2D</span>
                 </div>
             </div>
-            <div class="project-card fade-in" data-tags="java projet universitaire but2">
-                <h3>Projet Universitaire BUT2</h3>
-                <p>Projet collaboratif réalisé en équipe. Développement d'une application complète avec gestion de projet agile.</p>
+
+            <div class="project-card fade-in" data-tags="c# csharp wpf base de données sql gestion universitaire crud restaurant sibilia">
+                <div class="project-header">
+                    <h3 data-fr="Application de Gestion Commerciale - Sibilia" data-en="Commercial Management Application - Sibilia">Application de Gestion Commerciale - Sibilia</h3>
+                    <span class="project-date">2024</span>
+                </div>
+                <p class="project-context" data-fr="Projet Universitaire BUT2 - Développement Logiciel & BDD" data-en="University Project BUT2 - Software Development & Database">Projet Universitaire BUT2 - Développement Logiciel & BDD</p>
+                <p data-fr="Application desktop complète en C# WPF avec base de données SQL pour la gestion d'un restaurant. Système incluant : authentification sécurisée administrateur, gestion complète des commandes (CRUD), gestion du catalogue de plats avec prix et catégories, interface utilisateur intuitive, et génération de rapports. Utilisation de Entity Framework pour l'ORM et architecture en couches (UI, Business Logic, Data Access)." data-en="Complete desktop application in C# WPF with SQL database for restaurant management. System including: secure administrator authentication, complete order management (CRUD), dish catalog management with prices and categories, intuitive user interface, and report generation. Using Entity Framework for ORM and layered architecture (UI, Business Logic, Data Access).">Application desktop complète en C# WPF avec base de données SQL pour la gestion d'un restaurant. Système incluant : authentification sécurisée administrateur, gestion complète des commandes (CRUD), gestion du catalogue de plats avec prix et catégories, interface utilisateur intuitive, et génération de rapports. Utilisation de Entity Framework pour l'ORM et architecture en couches (UI, Business Logic, Data Access).</p>
+                
+                <!-- Bouton pour afficher les photos -->
+                <button class="view-photos-btn" onclick="openGallery('sibilia')" data-fr="📸 Voir les photos" data-en="📸 View photos">📸 Voir les photos</button>
+                
+                <!-- Galerie d'images du projet (cachée) -->
+                <div class="project-gallery" id="gallery-sibilia" style="display: none;">
+                    <img src="images/sibilia/page-connexion.jpg" alt="Page de connexion" class="project-screenshot" data-gallery="sibilia">
+                    <img src="images/sibilia/page-commande.jpg" alt="Page de gestion des commandes" class="project-screenshot" data-gallery="sibilia">
+                    <img src="images/sibilia/page-creation-commande.jpg" alt="Page de création de commande" class="project-screenshot" data-gallery="sibilia">
+                    <img src="images/sibilia/page-creation-commande-filtrer.jpg" alt="Page de création de commande avec filtres" class="project-screenshot" data-gallery="sibilia">
+                    <img src="images/sibilia/page-gestion-plats.jpg" alt="Page de gestion des plats" class="project-screenshot" data-gallery="sibilia">
+                    <img src="images/sibilia/page-gestion-plats-manager.jpg" alt="Page de gestion des plats (manager)" class="project-screenshot" data-gallery="sibilia">
+                    <img src="images/sibilia/page-client.jpg" alt="Page de gestion des clients" class="project-screenshot" data-gallery="sibilia">
+                </div>
+                
                 <div class="project-tags">
-                    <span class="tag">Java</span>
-                    <span class="tag">Travail d'équipe</span>
-                    <span class="tag">Agile</span>
+                    <span class="tag">C#</span>
+                    <span class="tag">WPF</span>
+                    <span class="tag">SQL</span>
+                    <span class="tag" data-fr="Base de données" data-en="Database">Base de données</span>
+                    <span class="tag" data-fr="Gestion" data-en="Management">Gestion</span>
                 </div>
             </div>
         </div>
 
         <div class="no-results" id="noResults">
-            <p>Aucun projet trouvé pour cette recherche.</p>
+            <p data-fr="Aucun projet trouvé pour cette recherche." data-en="No projects found for this search.">Aucun projet trouvé pour cette recherche.</p>
         </div>
     </section>
 
@@ -148,31 +377,30 @@
                 <input type="hidden" name="_template" value="table">
                 
                 <div class="form-group">
-                    <label for="name">Nom</label>
-                    <input type="text" id="name" name="name" required placeholder="Votre nom">
+                    <label for="name" data-fr="Nom" data-en="Name">Nom</label>
+                    <input type="text" id="name" name="name" required placeholder="Votre nom" data-fr-placeholder="Votre nom" data-en-placeholder="Your name">
                 </div>
                 
                 <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required placeholder="votre.email@exemple.com">
+                    <label for="email" data-fr="Email" data-en="Email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="votre.email@exemple.com" data-fr-placeholder="votre.email@exemple.com" data-en-placeholder="your.email@example.com">
                 </div>
                 
                 <div class="form-group">
-                    <label for="subject">Sujet</label>
-                    <input type="text" id="subject" name="subject" required placeholder="Sujet du message">
+                    <label for="subject" data-fr="Sujet" data-en="Subject">Sujet</label>
+                    <input type="text" id="subject" name="subject" required placeholder="Sujet du message" data-fr-placeholder="Sujet du message" data-en-placeholder="Message subject">
                 </div>
                 
                 <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="6" required placeholder="Votre message..."></textarea>
+                    <label for="message" data-fr="Message" data-en="Message">Message</label>
+                    <textarea id="message" name="message" rows="6" required placeholder="Votre message..." data-fr-placeholder="Votre message..." data-en-placeholder="Your message..."></textarea>
                 </div>
                 
-                <button type="submit" class="cta-button">Envoyer le message</button>
+                <button type="submit" class="cta-button" data-fr="Envoyer le message" data-en="Send message">Envoyer le message</button>
             </form>
             
             <div class="contact-links">
-                <a href="mailto:tristan.gastaldy@etu.univ-smb.fr" class="contact-link">Email</a>
-                <a href="https://github.com/tristangastaldy" class="contact-link" target="_blank">GitHub</a>
+                <a href="https://github.com/Youpfun" class="contact-link" target="_blank">GitHub</a>
                 <a href="https://www.linkedin.com/in/tristan-gastaldy-8582a3335/" class="contact-link" target="_blank">LinkedIn</a>
             </div>
         </div>
@@ -180,7 +408,7 @@
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Tristan Gastaldy. Tous droits réservés.</p>
+        <p data-fr="&copy; 2025 Tristan Gastaldy. Tous droits réservés." data-en="&copy; 2025 Tristan Gastaldy. All rights reserved.">&copy; 2025 Tristan Gastaldy. Tous droits réservés.</p>
     </footer>
 
     <script src="script.js"></script>

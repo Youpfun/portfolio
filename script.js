@@ -4,6 +4,8 @@ var currentLang = 'fr';
 var translations = {
     fr: {
         about: 'À propos',
+        skills: 'Compétences',
+        experiences: 'Expériences',
         projects: 'Projets',
         cv: 'CV',
         contact: 'Contact',
@@ -13,15 +15,20 @@ var translations = {
         about_title: 'À propos',
         about_text1: 'Actuellement en deuxième année de BUT Informatique, je me spécialise dans le développement web et la conception d\'interfaces. Mon parcours m\'a permis d\'acquérir des compétences solides en programmation et en gestion de projets.',
         about_text2: 'J\'ai une approche pragmatique du développement, en privilégiant des solutions efficaces et maintenables. Je suis particulièrement intéressé par les technologies modernes et les bonnes pratiques de développement.',
+        skills_title: 'Compétences Techniques',
+        experiences_title: 'Expériences Professionnelles',
         projects_title: 'Projets',
         search_placeholder: '🔍 Rechercher un projet, une technologie...',
         no_results: 'Aucun projet trouvé pour cette recherche.',
         contact_title: 'Contact',
         contact_desc: 'Vous avez un projet en tête ? N\'hésitez pas à me contacter.',
-        contact_btn: 'Me contacter'
+        contact_btn: 'Me contacter',
+        view_photos: '📸 Voir les photos'
     },
     en: {
         about: 'About',
+        skills: 'Skills',
+        experiences: 'Experiences',
         projects: 'Projects',
         cv: 'Resume',
         contact: 'Contact',
@@ -31,12 +38,15 @@ var translations = {
         about_title: 'About',
         about_text1: 'Currently in my second year of BUT Computer Science, I specialize in web development and interface design. My journey has allowed me to acquire solid skills in programming and project management.',
         about_text2: 'I have a pragmatic approach to development, favoring efficient and maintainable solutions. I am particularly interested in modern technologies and best development practices.',
+        skills_title: 'Technical Skills',
+        experiences_title: 'Professional Experiences',
         projects_title: 'Projects',
         search_placeholder: '🔍 Search for a project, technology...',
         no_results: 'No projects found for this search.',
         contact_title: 'Contact',
         contact_desc: 'Have a project in mind? Feel free to contact me.',
-        contact_btn: 'Contact me'
+        contact_btn: 'Contact me',
+        view_photos: '📸 View photos'
     }
 };
 
@@ -55,9 +65,11 @@ function updateLanguage() {
     // Mettre à jour les liens de navigation
     var navLinks = document.querySelectorAll('.nav-link-text');
     if (navLinks[0]) navLinks[0].textContent = lang.about;
-    if (navLinks[1]) navLinks[1].textContent = lang.projects;
-    if (navLinks[2]) navLinks[2].textContent = lang.cv;
-    if (navLinks[3]) navLinks[3].textContent = lang.contact;
+    if (navLinks[1]) navLinks[1].textContent = lang.skills;
+    if (navLinks[2]) navLinks[2].textContent = lang.experiences;
+    if (navLinks[3]) navLinks[3].textContent = lang.projects;
+    if (navLinks[4]) navLinks[4].textContent = lang.cv;
+    if (navLinks[5]) navLinks[5].textContent = lang.contact;
     
     // Mettre à jour le hero
     var heroTitle = document.querySelector('.hero-content h2');
@@ -69,9 +81,13 @@ function updateLanguage() {
     
     // Mettre à jour les titres de section
     var aboutTitle = document.querySelector('#about .section-title');
+    var skillsTitle = document.querySelector('#skills .section-title');
+    var experiencesTitle = document.querySelector('#experiences .section-title');
     var projectsTitle = document.querySelector('#projects .section-title');
     var contactTitle = document.querySelector('#contact .section-title');
     if (aboutTitle) aboutTitle.textContent = lang.about_title;
+    if (skillsTitle) skillsTitle.textContent = lang.skills_title;
+    if (experiencesTitle) experiencesTitle.textContent = lang.experiences_title;
     if (projectsTitle) projectsTitle.textContent = lang.projects_title;
     if (contactTitle) contactTitle.textContent = lang.contact_title;
     
@@ -93,6 +109,28 @@ function updateLanguage() {
     var contactBtn = document.querySelector('.contact-content .cta-button');
     if (contactDesc) contactDesc.textContent = lang.contact_desc;
     if (contactBtn) contactBtn.textContent = lang.contact_btn;
+    
+    // Mettre à jour les projets avec data-fr et data-en
+    var elementsWithLang = document.querySelectorAll('[data-fr][data-en]');
+    for (var i = 0; i < elementsWithLang.length; i++) {
+        var element = elementsWithLang[i];
+        if (currentLang === 'fr') {
+            element.textContent = element.getAttribute('data-fr');
+        } else {
+            element.textContent = element.getAttribute('data-en');
+        }
+    }
+    
+    // Mettre à jour les placeholders des inputs
+    var inputsWithPlaceholder = document.querySelectorAll('[data-fr-placeholder][data-en-placeholder]');
+    for (var j = 0; j < inputsWithPlaceholder.length; j++) {
+        var input = inputsWithPlaceholder[j];
+        if (currentLang === 'fr') {
+            input.placeholder = input.getAttribute('data-fr-placeholder');
+        } else {
+            input.placeholder = input.getAttribute('data-en-placeholder');
+        }
+    }
     
     // Sauvegarder la langue
     localStorage.setItem('lang', currentLang);
@@ -124,10 +162,24 @@ function searchProjects() {
 
     for (var i = 0; i < projects.length; i++) {
         var project = projects[i];
-        var title = project.getElementsByTagName('h3')[0].textContent.toLowerCase();
-        var description = project.getElementsByTagName('p')[0].textContent.toLowerCase();
+        var title = project.querySelector('h3') ? project.querySelector('h3').textContent.toLowerCase() : '';
+        
+        // Récupérer TOUTES les descriptions (pas seulement la première)
+        var descriptions = project.querySelectorAll('p');
+        var allDescriptions = '';
+        for (var j = 0; j < descriptions.length; j++) {
+            allDescriptions += ' ' + descriptions[j].textContent.toLowerCase();
+        }
+        
+        // Récupérer tous les tags
+        var tagElements = project.querySelectorAll('.tag');
+        var allTags = '';
+        for (var k = 0; k < tagElements.length; k++) {
+            allTags += ' ' + tagElements[k].textContent.toLowerCase();
+        }
+        
         var tags = project.getAttribute('data-tags') || '';
-        var allText = title + ' ' + description + ' ' + tags;
+        var allText = title + ' ' + allDescriptions + ' ' + allTags + ' ' + tags;
 
         if (searchText === '' || allText.indexOf(searchText) > -1) {
             project.style.display = 'block';
@@ -268,3 +320,147 @@ window.onload = function() {
     // Appeler une fois au chargement
     onScroll();
 };
+// Variables globales pour la galerie
+var currentGallery = [];
+var currentImageIndex = 0;
+
+// Ouvrir la galerie d'un projet
+function openGallery(galleryId) {
+    var gallery = document.getElementById('gallery-' + galleryId);
+    if (gallery) {
+        var images = gallery.querySelectorAll('.project-screenshot');
+        if (images.length > 0) {
+            currentGallery = Array.from(images);
+            currentImageIndex = 0;
+            openImageModal(currentGallery[0]);
+        }
+    }
+}
+
+// Modal pour les images de projets avec navigation
+function openImageModal(img) {
+    // Créer le modal s'il n'existe pas
+    var modal = document.getElementById('imageModal');
+    if (!modal) {
+        modal = document.createElement('div');
+        modal.id = 'imageModal';
+        modal.className = 'image-modal';
+        
+        var closeBtn = document.createElement('button');
+        closeBtn.className = 'image-modal-close';
+        closeBtn.innerHTML = '&times;';
+        closeBtn.onclick = closeImageModal;
+        
+        var prevBtn = document.createElement('button');
+        prevBtn.className = 'image-modal-nav image-modal-prev';
+        prevBtn.innerHTML = '❮';
+        prevBtn.onclick = function(e) {
+            e.stopPropagation();
+            showPreviousImage();
+        };
+        
+        var nextBtn = document.createElement('button');
+        nextBtn.className = 'image-modal-nav image-modal-next';
+        nextBtn.innerHTML = '❯';
+        nextBtn.onclick = function(e) {
+            e.stopPropagation();
+            showNextImage();
+        };
+        
+        var modalImg = document.createElement('img');
+        modalImg.id = 'modalImage';
+        
+        var counter = document.createElement('div');
+        counter.id = 'imageCounter';
+        counter.className = 'image-counter';
+        
+        modal.appendChild(closeBtn);
+        modal.appendChild(prevBtn);
+        modal.appendChild(nextBtn);
+        modal.appendChild(modalImg);
+        modal.appendChild(counter);
+        document.body.appendChild(modal);
+        
+        // Fermer en cliquant sur le fond
+        modal.onclick = function(e) {
+            if (e.target === modal) {
+                closeImageModal();
+            }
+        };
+    }
+    
+    // Si c'est un élément image, construire la galerie
+    if (img.tagName === 'IMG') {
+        var galleryName = img.getAttribute('data-gallery');
+        if (galleryName) {
+            var allImages = document.querySelectorAll('[data-gallery="' + galleryName + '"]');
+            currentGallery = Array.from(allImages);
+            currentImageIndex = currentGallery.indexOf(img);
+        }
+    }
+    
+    // Afficher l'image
+    updateModalImage();
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function updateModalImage() {
+    var modalImg = document.getElementById('modalImage');
+    var counter = document.getElementById('imageCounter');
+    var prevBtn = document.querySelector('.image-modal-prev');
+    var nextBtn = document.querySelector('.image-modal-next');
+    
+    if (currentGallery.length > 0) {
+        var currentImg = currentGallery[currentImageIndex];
+        modalImg.src = currentImg.src;
+        modalImg.alt = currentImg.alt;
+        
+        // Mettre à jour le compteur
+        if (counter) {
+            counter.textContent = (currentImageIndex + 1) + ' / ' + currentGallery.length;
+        }
+        
+        // Afficher/masquer les boutons de navigation
+        if (prevBtn && nextBtn) {
+            prevBtn.style.display = currentGallery.length > 1 ? 'block' : 'none';
+            nextBtn.style.display = currentGallery.length > 1 ? 'block' : 'none';
+        }
+    }
+}
+
+function showPreviousImage() {
+    if (currentGallery.length > 0) {
+        currentImageIndex = (currentImageIndex - 1 + currentGallery.length) % currentGallery.length;
+        updateModalImage();
+    }
+}
+
+function showNextImage() {
+    if (currentGallery.length > 0) {
+        currentImageIndex = (currentImageIndex + 1) % currentGallery.length;
+        updateModalImage();
+    }
+}
+
+function closeImageModal() {
+    var modal = document.getElementById('imageModal');
+    if (modal) {
+        modal.classList.remove('active');
+        document.body.style.overflow = 'auto';
+    }
+}
+
+// Fermer le modal avec la touche Échap et naviguer avec les flèches
+document.addEventListener('keydown', function(e) {
+    var modal = document.getElementById('imageModal');
+    if (modal && modal.classList.contains('active')) {
+        if (e.key === 'Escape') {
+            closeImageModal();
+        } else if (e.key === 'ArrowLeft') {
+            showPreviousImage();
+        } else if (e.key === 'ArrowRight') {
+            showNextImage();
+        }
+    }
+});
