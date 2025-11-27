@@ -23,7 +23,8 @@ var translations = {
         contact_title: 'Contact',
         contact_desc: 'Vous avez un projet en tête ? N\'hésitez pas à me contacter.',
         contact_btn: 'Me contacter',
-        view_photos: '📸 Voir les photos'
+        view_photos: '📸 Voir les photos',
+        references_title: 'Références'
     },
     en: {
         about: 'About',
@@ -46,7 +47,8 @@ var translations = {
         contact_title: 'Contact',
         contact_desc: 'Have a project in mind? Feel free to contact me.',
         contact_btn: 'Contact me',
-        view_photos: '📸 View photos'
+        view_photos: '📸 View photos',
+        references_title: 'References'
     }
 };
 
@@ -85,11 +87,13 @@ function updateLanguage() {
     var experiencesTitle = document.querySelector('#experiences .section-title');
     var projectsTitle = document.querySelector('#projects .section-title');
     var contactTitle = document.querySelector('#contact .section-title');
+    var referencesTitle = document.querySelector('#references .section-title');
     if (aboutTitle) aboutTitle.textContent = lang.about_title;
     if (skillsTitle) skillsTitle.textContent = lang.skills_title;
     if (experiencesTitle) experiencesTitle.textContent = lang.experiences_title;
     if (projectsTitle) projectsTitle.textContent = lang.projects_title;
     if (contactTitle) contactTitle.textContent = lang.contact_title;
+    if (referencesTitle) referencesTitle.textContent = lang.references_title;
     
     // Mettre à jour la section À propos
     var aboutTexts = document.querySelectorAll('.about-text p');

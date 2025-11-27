@@ -21,8 +21,7 @@ var translations = {
         skills: [
             'Développement web',
             'Programmation orientée objet',
-            'Bases de données',
-            'Design graphique'
+            'Bases de données'
         ],
         languages: [
             'Français (langue maternelle)',
@@ -48,8 +47,7 @@ var translations = {
         skills: [
             'Web development',
             'Object-oriented programming',
-            'Databases',
-            'Graphic design'
+            'Databases'
         ],
         languages: [
             'French (native)',
