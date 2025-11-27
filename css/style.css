@@ -336,11 +336,12 @@ section {
     background-color: var(--bg-secondary);
     padding: 2rem;
     border-left: 3px solid var(--accent);
-    transition: transform 0.3s;
+    transition: transform 0.3s, border-left-width 0.3s;
 }
 
 .experience-card:hover {
     transform: translateX(5px);
+    border-left-width: 5px;
 }
 
 .experience-header {
