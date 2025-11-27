@@ -170,7 +170,7 @@
             
             <div class="experience-card">
                 <div class="experience-header">
-                    <h3 data-fr="Éboueur" data-en="Waste Collector">Éboueur</h3>
+                    <h3 data-fr="Éboueur" data-en="Garbage Collector">Éboueur</h3>
                     <span class="experience-date" data-fr="Août 2025" data-en="August 2025">Août 2025</span>
                 </div>
                 <p class="experience-company" data-fr="Service municipal" data-en="Municipal service">Service municipal</p>
@@ -223,7 +223,8 @@
                     <span class="project-date" data-fr="Novembre 2025" data-en="November 2025">Novembre 2025</span>
                 </div>
                 <p class="project-context" data-fr="Projet personnel - Développement Web" data-en="Personal Project - Web Development">Projet personnel - Développement Web</p>
-                <p data-fr="Conception et développement de mon portfolio en ligne from scratch. Site responsive présentant mes projets et compétences avec système de traduction FR/EN, formulaire de contact fonctionnel, et animations fluides. Utilisation de JavaScript vanilla pour les interactions et CSS moderne pour le design." data-en="Design and development of my online portfolio from scratch. Responsive website showcasing my projects and skills with FR/EN translation system, functional contact form, and smooth animations. Using vanilla JavaScript for interactions and modern CSS for design.">Conception et développement de mon portfolio en ligne from scratch. Site responsive présentant mes projets et compétences avec système de traduction FR/EN, formulaire de contact fonctionnel, et animations fluides. Utilisation de JavaScript vanilla pour les interactions et CSS moderne pour le design.</p>
+                <p data-fr="Conception et développement de mon portfolio en ligne depuis zéro. Site responsive présentant mes projets et compétences." data-en="Design and development of my online portfolio from scratch. Responsive website showcasing my projects and skills.">Conception et développement de mon portfolio en ligne depuis zéro. Site responsive présentant mes projets et compétences.</p>
+                <button class="view-details-btn" onclick="openProjectModal('portfolio')" data-fr="📋 Voir les détails" data-en="📋 View details">📋 Voir les détails</button>
                 <div class="project-tags">
                     <span class="tag">HTML/CSS</span>
                     <span class="tag">JavaScript</span>
@@ -232,124 +233,48 @@
                 </div>
             </div>
 
-            <div class="project-card fade-in" data-tags="hosting hébergement jeux gaming serveur web">
+            <div class="project-card fade-in" data-tags="c# csharp wpf web html css javascript club med universitaire copie clone">
                 <div class="project-header">
-                    <h3 data-fr="Fire-Hosting.net" data-en="Fire-Hosting.net">Fire-Hosting.net</h3>
-                    <span class="project-date">2024</span>
+                    <h3 data-fr="Refonte du site Club Med" data-en="Club Med Website Redesign">Refonte du site Club Med</h3>
+                    <span class="project-date" data-fr="En cours - 2025" data-en="Ongoing - 2025">En cours - 2025</span>
                 </div>
-                <p class="project-context" data-fr="Projet client - Développement Web" data-en="Client Project - Web Development">Projet client - Développement Web</p>
-                <p data-fr="Plateforme d'hébergement de serveurs de jeux vidéo. Développement d'un site vitrine professionnel avec présentation des offres d'hébergement, système de tarification, et interface d'administration. Infrastructure optimisée pour le gaming avec HTML, CSS et JavaScript." data-en="Video game server hosting platform. Development of a professional showcase website with hosting plans presentation, pricing system, and administration interface. Gaming-optimized infrastructure using HTML, CSS and JavaScript.">Plateforme d'hébergement de serveurs de jeux vidéo. Développement d'un site vitrine professionnel avec présentation des offres d'hébergement, système de tarification, et interface d'administration. Infrastructure optimisée pour le gaming avec HTML, CSS et JavaScript.</p>
-                
-                <!-- Bouton pour afficher les photos -->
-                <button class="view-photos-btn" onclick="openGallery('firehosting')" data-fr="📸 Voir les photos" data-en="📸 View photos">📸 Voir les photos</button>
-                
-                <!-- Galerie d'images du projet (cachée) -->
-                <div class="project-gallery" id="gallery-firehosting" style="display: none;">
-                    <img src="images/fire-hosting/mock-up.jpg" alt="Mock-up Fire-Hosting" class="project-screenshot" data-gallery="firehosting">
-                </div>
-                
+                <p class="project-context" data-fr="Projet Universitaire BUT2 - Développement Web" data-en="University Project BUT2 - Web Development">Projet Universitaire BUT2 - Développement Web</p>
+                <p data-fr="Recréation complète du site Club Med de A à Z dans le cadre d'un projet universitaire. Reproduction fidèle de l'interface et des fonctionnalités." data-en="Complete recreation of the Club Med website from scratch as part of a university project. Faithful reproduction of the interface and functionalities.">Recréation complète du site Club Med de A à Z dans le cadre d'un projet universitaire. Reproduction fidèle de l'interface et des fonctionnalités.</p>
+                <button class="view-details-btn" onclick="openProjectModal('clubmed')" data-fr="📋 Voir les détails" data-en="📋 View details">📋 Voir les détails</button>
                 <div class="project-tags">
                     <span class="tag">HTML/CSS</span>
                     <span class="tag">JavaScript</span>
-                    <span class="tag">Gaming</span>
+                    <span class="tag">Laravel</span>
+                    <span class="tag" data-fr="Reproduction" data-en="Reproduction">Reproduction</span>
+                    <span class="tag" data-fr="En cours" data-en="Ongoing">En cours</span>
+                </div>
+            </div>
+
+            <div class="project-card fade-in" data-tags="hosting hébergement jeux gaming serveur web">
+                <div class="project-header">
+                    <h3 data-fr="Fire-Hosting.net" data-en="Fire-Hosting.net">Fire-Hosting.net</h3>
+                    <span class="project-date" data-fr="En cours - 2025" data-en="Ongoing - 2025">En cours - 2025</span>
+                </div>
+                <p class="project-context" data-fr="Projet client - Développement Web" data-en="Client Project - Web Development">Projet client - Développement Web</p>
+                <p data-fr="Plateforme d'hébergement de serveurs de jeux vidéo. Développement d'un site vitrine professionnel avec présentation des offres." data-en="Video game server hosting platform. Development of a professional showcase website with hosting plans presentation.">Plateforme d'hébergement de serveurs de jeux vidéo. Développement d'un site vitrine professionnel avec présentation des offres.</p>
+                <button class="view-details-btn" onclick="openProjectModal('fire-hosting')" data-fr="📋 Voir les détails" data-en="📋 View details">📋 Voir les détails</button>
+                <div class="project-tags">
+                    <span class="tag">HTML/CSS</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">Laravel</span>
                     <span class="tag" data-fr="Hébergement" data-en="Hosting">Hébergement</span>
                 </div>
                 <a href="https://fire-hosting.net" target="_blank" class="project-link" data-fr="Voir le site →" data-en="View site →">Voir le site →</a>
             </div>
 
-            <div class="project-card fade-in" data-tags="wakeboard wakesurf sport nautique entreprise web">
-                <div class="project-header">
-                    <h3 data-fr="Aixnride.com" data-en="Aixnride.com">Aixnride.com</h3>
-                    <span class="project-date">2024</span>
-                </div>
-                <p class="project-context" data-fr="Projet client - Développement Web & Design" data-en="Client Project - Web Development & Design">Projet client - Développement Web & Design</p>
-                <p data-fr="Site web pour une entreprise de sports nautiques. Création complète du site vitrine avec présentation des activités de wakeboard et wakesurf, système de réservation, galerie photos, et informations pratiques. Design moderne et responsive adapté à l'identité de la marque." data-en="Website for a water sports company. Complete creation of showcase site with wakeboard and wakesurf activities presentation, booking system, photo gallery, and practical information. Modern and responsive design adapted to brand identity.">Site web pour une entreprise de sports nautiques. Création complète du site vitrine avec présentation des activités de wakeboard et wakesurf, système de réservation, galerie photos, et informations pratiques. Design moderne et responsive adapté à l'identité de la marque.</p>
-                
-                <!-- Bouton pour afficher les photos -->
-                <button class="view-photos-btn" onclick="openGallery('aixnride')" data-fr="📸 Voir les photos" data-en="📸 View photos">📸 Voir les photos</button>
-                
-                <!-- Galerie d'images du projet (cachée) -->
-                <div class="project-gallery" id="gallery-aixnride" style="display: none;">
-                    <img src="images/aixnride/Capture d'écran 2025-11-26 094516.png" alt="Page d'accueil Aixnride" class="project-screenshot" data-gallery="aixnride">
-                    <img src="images/aixnride/Capture d'écran 2025-11-26 094549.png" alt="Section activités Aixnride" class="project-screenshot" data-gallery="aixnride">
-                    <img src="images/aixnride/Capture d'écran 2025-11-26 094605.png" alt="Galerie photos Aixnride" class="project-screenshot" data-gallery="aixnride">
-                    <img src="images/aixnride/Capture d'écran 2025-11-26 094609.png" alt="Section réservation Aixnride" class="project-screenshot" data-gallery="aixnride">
-                    <img src="images/aixnride/Capture d'écran 2025-11-26 094614.png" alt="Contact Aixnride" class="project-screenshot" data-gallery="aixnride">
-                </div>
-                
-                <div class="project-tags">
-                    <span class="tag">HTML/CSS</span>
-                    <span class="tag">JavaScript</span>
-                    <span class="tag">Wakeboard</span>
-                    <span class="tag" data-fr="Design" data-en="Design">Design</span>
-                </div>
-                <a href="https://aixnride.com" target="_blank" class="project-link" data-fr="Voir le site →" data-en="View site →">Voir le site →</a>
-            </div>
-
-            <div class="project-card fade-in" data-tags="ostéopathe santé chambéry site web médical professionnel">
-                <div class="project-header">
-                    <h3 data-fr="Ostéopathe Chambéry" data-en="Osteopath Chambéry">Ostéopathe Chambéry</h3>
-                    <span class="project-date">2024</span>
-                </div>
-                <p class="project-context" data-fr="Projet client - Développement Web Médical" data-en="Client Project - Medical Web Development">Projet client - Développement Web Médical</p>
-                <p data-fr="Site web professionnel pour un cabinet d'ostéopathie à Chambéry. Développement d'un site vitrine avec présentation des services d'ostéopathie, système de prise de rendez-vous en ligne, présentation des tarifs, et informations de contact. Interface épurée et professionnelle adaptée au secteur médical." data-en="Professional website for an osteopathy clinic in Chambéry. Development of a showcase site with osteopathy services presentation, online appointment booking system, pricing display, and contact information. Clean and professional interface adapted to the medical sector.">Site web professionnel pour un cabinet d'ostéopathie à Chambéry. Développement d'un site vitrine avec présentation des services d'ostéopathie, système de prise de rendez-vous en ligne, présentation des tarifs, et informations de contact. Interface épurée et professionnelle adaptée au secteur médical.</p>
-                
-                <!-- Bouton pour afficher les photos -->
-                <button class="view-photos-btn" onclick="openGallery('osteopathe')" data-fr="📸 Voir les photos" data-en="📸 View photos">📸 Voir les photos</button>
-                
-                <!-- Galerie d'images du projet (cachée) -->
-                <div class="project-gallery" id="gallery-osteopathe" style="display: none;">
-                    <img src="images/osteopathe-chambery/Capture d'écran 2025-11-26 094250.png" alt="Page d'accueil Ostéopathe Chambéry" class="project-screenshot" data-gallery="osteopathe">
-                    <img src="images/osteopathe-chambery/Capture d'écran 2025-11-26 094359.png" alt="Services ostéopathie" class="project-screenshot" data-gallery="osteopathe">
-                    <img src="images/osteopathe-chambery/Capture d'écran 2025-11-26 094409.png" alt="Prise de rendez-vous" class="project-screenshot" data-gallery="osteopathe">
-                </div>
-                
-                <div class="project-tags">
-                    <span class="tag">HTML/CSS</span>
-                    <span class="tag">JavaScript</span>
-                    <span class="tag" data-fr="Santé" data-en="Health">Santé</span>
-                    <span class="tag" data-fr="Professionnel" data-en="Professional">Professionnel</span>
-                </div>
-                <a href="https://osteopathe-chambery.com" target="_blank" class="project-link" data-fr="Voir le site →" data-en="View site →">Voir le site →</a>
-            </div>
-
-            <div class="project-card fade-in" data-tags="c# csharp wpf jeu 2d game développement universitaire poo">
-                <div class="project-header">
-                    <h3 data-fr="Jeu 2D en C# WPF" data-en="2D Game in C# WPF">Jeu 2D en C# WPF</h3>
-                    <span class="project-date">2024</span>
-                </div>
-                <p class="project-context" data-fr="Projet Universitaire BUT2 - Développement Logiciel" data-en="University Project BUT2 - Software Development">Projet Universitaire BUT2 - Développement Logiciel</p>
-                <p data-fr="Développement d'un jeu vidéo en 2D complet réalisé en C# avec Windows Presentation Foundation (WPF). Mise en œuvre des concepts avancés de programmation orientée objet (héritage, polymorphisme, encapsulation), gestion des événements clavier/souris, système de collision, et interface graphique animée. Architecture MVC pour une séparation claire du code." data-en="Development of a complete 2D video game created in C# with Windows Presentation Foundation (WPF). Implementation of advanced object-oriented programming concepts (inheritance, polymorphism, encapsulation), keyboard/mouse event handling, collision system, and animated graphical interface. MVC architecture for clear code separation.">Développement d'un jeu vidéo en 2D complet réalisé en C# avec Windows Presentation Foundation (WPF). Mise en œuvre des concepts avancés de programmation orientée objet (héritage, polymorphisme, encapsulation), gestion des événements clavier/souris, système de collision, et interface graphique animée. Architecture MVC pour une séparation claire du code.</p>
-                <div class="project-tags">
-                    <span class="tag">C#</span>
-                    <span class="tag">WPF</span>
-                    <span class="tag" data-fr="POO" data-en="OOP">POO</span>
-                    <span class="tag" data-fr="Jeu 2D" data-en="2D Game">Jeu 2D</span>
-                </div>
-            </div>
-
             <div class="project-card fade-in" data-tags="c# csharp wpf base de données sql gestion universitaire crud restaurant sibilia">
                 <div class="project-header">
                     <h3 data-fr="Application de Gestion Commerciale - Sibilia" data-en="Commercial Management Application - Sibilia">Application de Gestion Commerciale - Sibilia</h3>
-                    <span class="project-date">2024</span>
+                    <span class="project-date">2025</span>
                 </div>
                 <p class="project-context" data-fr="Projet Universitaire BUT2 - Développement Logiciel & BDD" data-en="University Project BUT2 - Software Development & Database">Projet Universitaire BUT2 - Développement Logiciel & BDD</p>
-                <p data-fr="Application desktop complète en C# WPF avec base de données SQL pour la gestion d'un restaurant. Système incluant : authentification sécurisée administrateur, gestion complète des commandes (CRUD), gestion du catalogue de plats avec prix et catégories, interface utilisateur intuitive, et génération de rapports. Utilisation de Entity Framework pour l'ORM et architecture en couches (UI, Business Logic, Data Access)." data-en="Complete desktop application in C# WPF with SQL database for restaurant management. System including: secure administrator authentication, complete order management (CRUD), dish catalog management with prices and categories, intuitive user interface, and report generation. Using Entity Framework for ORM and layered architecture (UI, Business Logic, Data Access).">Application desktop complète en C# WPF avec base de données SQL pour la gestion d'un restaurant. Système incluant : authentification sécurisée administrateur, gestion complète des commandes (CRUD), gestion du catalogue de plats avec prix et catégories, interface utilisateur intuitive, et génération de rapports. Utilisation de Entity Framework pour l'ORM et architecture en couches (UI, Business Logic, Data Access).</p>
-                
-                <!-- Bouton pour afficher les photos -->
-                <button class="view-photos-btn" onclick="openGallery('sibilia')" data-fr="📸 Voir les photos" data-en="📸 View photos">📸 Voir les photos</button>
-                
-                <!-- Galerie d'images du projet (cachée) -->
-                <div class="project-gallery" id="gallery-sibilia" style="display: none;">
-                    <img src="images/sibilia/page-connexion.jpg" alt="Page de connexion" class="project-screenshot" data-gallery="sibilia">
-                    <img src="images/sibilia/page-commande.jpg" alt="Page de gestion des commandes" class="project-screenshot" data-gallery="sibilia">
-                    <img src="images/sibilia/page-creation-commande.jpg" alt="Page de création de commande" class="project-screenshot" data-gallery="sibilia">
-                    <img src="images/sibilia/page-creation-commande-filtrer.jpg" alt="Page de création de commande avec filtres" class="project-screenshot" data-gallery="sibilia">
-                    <img src="images/sibilia/page-gestion-plats.jpg" alt="Page de gestion des plats" class="project-screenshot" data-gallery="sibilia">
-                    <img src="images/sibilia/page-gestion-plats-manager.jpg" alt="Page de gestion des plats (manager)" class="project-screenshot" data-gallery="sibilia">
-                    <img src="images/sibilia/page-client.jpg" alt="Page de gestion des clients" class="project-screenshot" data-gallery="sibilia">
-                </div>
-                
+                <p data-fr="Application desktop complète en C# WPF avec base de données SQL pour la gestion d'un restaurant." data-en="Complete desktop application in C# WPF with SQL database for restaurant management.">Application desktop complète en C# WPF avec base de données SQL pour la gestion d'un restaurant.</p>
+                <button class="view-details-btn" onclick="openProjectModal('sibilia')" data-fr="📋 Voir les détails" data-en="📋 View details">📋 Voir les détails</button>
                 <div class="project-tags">
                     <span class="tag">C#</span>
                     <span class="tag">WPF</span>
@@ -358,12 +283,76 @@
                     <span class="tag" data-fr="Gestion" data-en="Management">Gestion</span>
                 </div>
             </div>
+
+            <div class="project-card fade-in" data-tags="wakeboard wakesurf sport nautique entreprise web">
+                <div class="project-header">
+                    <h3 data-fr="Aixnride.com" data-en="Aixnride.com">Aixnride.com</h3>
+                    <span class="project-date">2025</span>
+                </div>
+                <p class="project-context" data-fr="Projet client - Développement Web & Design" data-en="Client Project - Web Development & Design">Projet client - Développement Web & Design</p>
+                <p data-fr="Site web pour une entreprise de sports nautiques. Création complète du site vitrine avec présentation des activités de wakeboard et wakesurf." data-en="Website for a water sports company. Complete creation of showcase site with wakeboard and wakesurf activities presentation.">Site web pour une entreprise de sports nautiques. Création complète du site vitrine avec présentation des activités de wakeboard et wakesurf.</p>
+                <button class="view-details-btn" onclick="openProjectModal('aixnride')" data-fr="📋 Voir les détails" data-en="📋 View details">📋 Voir les détails</button>
+                <div class="project-tags">
+                    <span class="tag">HTML/CSS</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag" data-fr="Design" data-en="Design">Design</span>
+                </div>
+                <a href="https://aixnride.com" target="_blank" class="project-link" data-fr="Voir le site →" data-en="View site →">Voir le site →</a>
+            </div>
+
+            <div class="project-card fade-in" data-tags="ostéopathe santé chambéry site web médical professionnel">
+                <div class="project-header">
+                    <h3 data-fr="Ostéopathe Chambéry" data-en="Osteopath Chambéry">Ostéopathe Chambéry</h3>
+                    <span class="project-date">2025</span>
+                </div>
+                <p class="project-context" data-fr="Projet client - Développement Web Médical" data-en="Client Project - Medical Web Development">Projet client - Développement Web Médical</p>
+                <p data-fr="Site web professionnel pour un cabinet d'ostéopathie à Chambéry. Développement d'un site vitrine avec présentation des services." data-en="Professional website for an osteopathy clinic in Chambéry. Development of a showcase site with services presentation.">Site web professionnel pour un cabinet d'ostéopathie à Chambéry. Développement d'un site vitrine avec présentation des services.</p>
+                <button class="view-details-btn" onclick="openProjectModal('osteopathe')" data-fr="📋 Voir les détails" data-en="📋 View details">📋 Voir les détails</button>
+                <div class="project-tags">
+                    <span class="tag">HTML/CSS</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag" data-fr="Professionnel" data-en="Professional">Professionnel</span>
+                </div>
+                <a href="https://osteopathe-chambery.com" target="_blank" class="project-link" data-fr="Voir le site →" data-en="View site →">Voir le site →</a>
+            </div>
+
+            <div class="project-card fade-in" data-tags="c# csharp wpf jeu 2d game développement universitaire">
+                <div class="project-header">
+                    <h3 data-fr="Jeu 2D en C# WPF" data-en="2D Game in C# WPF">Jeu 2D en C# WPF</h3>
+                    <span class="project-date">2024</span>
+                </div>
+                <p class="project-context" data-fr="Projet Universitaire BUT2 - Développement Logiciel" data-en="University Project BUT2 - Software Development">Projet Universitaire BUT2 - Développement Logiciel</p>
+                <p data-fr="Développement d'un jeu vidéo en 2D complet réalisé en C# avec Windows Presentation Foundation (WPF)." data-en="Development of a complete 2D video game created in C# with Windows Presentation Foundation (WPF).">Développement d'un jeu vidéo en 2D complet réalisé en C# avec Windows Presentation Foundation (WPF).</p>
+                <button class="view-details-btn" onclick="openProjectModal('jeu2d')" data-fr="📋 Voir les détails" data-en="📋 View details">📋 Voir les détails</button>
+                <div class="project-tags">
+                    <span class="tag">C#</span>
+                    <span class="tag">WPF</span>
+                    <span class="tag" data-fr="Jeu 2D" data-en="2D Game">Jeu 2D</span>
+                </div>
+            </div>
         </div>
 
         <div class="no-results" id="noResults">
             <p data-fr="Aucun projet trouvé pour cette recherche." data-en="No projects found for this search.">Aucun projet trouvé pour cette recherche.</p>
         </div>
     </section>
+
+    <!-- Project Modal -->
+    <div id="projectModal" class="project-modal">
+        <div class="project-modal-content">
+            <span class="project-modal-close" onclick="closeProjectModal()">&times;</span>
+            <div id="projectModalBody"></div>
+        </div>
+    </div>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="image-modal">
+        <span class="image-modal-close" onclick="closeImageModal()">&times;</span>
+        <button class="image-modal-prev" onclick="showPreviousImage()">&#10094;</button>
+        <button class="image-modal-next" onclick="showNextImage()">&#10095;</button>
+        <img id="modalImage" src="" alt="">
+        <div id="imageCounter" class="image-counter"></div>
+    </div>
 
     <!-- Contact Section -->
     <section id="contact">
